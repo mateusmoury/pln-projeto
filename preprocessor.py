@@ -8,7 +8,7 @@ def preprocess(text):
   stemmer = PorterStemmer()
   stop = stopwords.words("english")
   result = word_tokenize(text)
-  result = [stemmer.stem_word(correct(word.lower())) for word in result if \
+  result = [stemmer.stem_word(word.lower()) for word in result if \
             word not in stop and \
             word not in string.punctuation and \
             word not in string.digits]
