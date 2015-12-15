@@ -1,6 +1,7 @@
 from reader import read
 from preprocessor import preprocess
 from classifier import NaiveBayesClassifier
+from knn import KNNClassifier
 from metrics import calculate_metrics
 import sys
 
@@ -32,7 +33,7 @@ if __name__ == '__main__':
         classifier = NaiveBayesClassifier(training_set)
 
       else:
-        classifier = KNNClassifier(training_set)
+        classifier = KNNClassifier(training_set, 7)
 
       print(calculate_metrics(test_set, classifier))
 
