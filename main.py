@@ -1,6 +1,6 @@
 from reader import read
 from preprocessor import preprocess
-from classifier import NaiveBayesClassifier
+from naivebayes import NaiveBayesClassifier
 from knn import KNNClassifier
 from metrics import calculate_metrics
 import sys
