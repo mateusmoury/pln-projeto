@@ -33,7 +33,7 @@ if __name__ == '__main__':
         classifier = NaiveBayesClassifier(training_set)
 
       else:
-        classifier = KNNClassifier(training_set, 7)
+        classifier = KNNClassifier(training_set, 5)
 
       print(calculate_metrics(test_set, classifier))
 
